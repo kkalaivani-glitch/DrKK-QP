@@ -1,283 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloud Computing Question Paper - CO & BT Mapping | Dr. K. Kalaivani</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SE & SD – Mid Term 1 (R23) | SR University</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; line-height: 1.4; background: #f5f5f5; padding: 20px; }
-    .question-paper { max-width: 210mm; margin: 0 auto; background: white; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-    .header { text-align: center; border: 2px solid #000; padding: 15px; margin-bottom: 15px; }
-    .university-name { font-size: 16px; font-weight: bold; margin-bottom: 5px; }
-    .dept-name { font-size: 13px; margin-bottom: 5px; }
-    .test-info { font-size: 12px; font-weight: bold; margin: 8px 0; }
-    .exam-details { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; margin: 15px 0; font-size: 11px; border: 1px solid #000; padding: 10px; }
-    .detail-row { display: flex; gap: 5px; }
-    .detail-row strong { min-width: 120px; }
-    .co-list { margin: 15px 0; padding: 10px; border: 1px solid #000; font-size: 10px; }
-    .co-list p { margin: 3px 0; line-height: 1.3; }
-    .part-header { background: #000; color: white; padding: 8px; font-weight: bold; font-size: 12px; margin: 20px 0 10px 0; text-align: center; }
-    .questions-table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 11px; }
-    .questions-table th, .questions-table td { border: 1px solid #000; padding: 8px; text-align: center; }
-    .questions-table th { background: #f0f0f0; font-weight: bold; }
-    .question-text { text-align: left; padding: 10px; line-height: 1.6; }
-    .question-text p { margin: 5px 0; }
-    .charts-section { margin: 30px 0; page-break-before: always; }
-    .charts-container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
-    .chart-wrapper { border: 1px solid #ddd; padding: 15px; background: white; }
-    .chart-title { font-size: 12px; font-weight: bold; text-align: center; margin-bottom: 15px; }
-    .bloom-bars { display: flex; align-items: flex-end; justify-content: space-around; height: 200px; border-left: 2px solid #000; border-bottom: 2px solid #000; padding: 10px; position: relative; }
-    .y-axis { position: absolute; left: -30px; top: 0; height: 100%; display: flex; flex-direction: column; justify-content: space-between; font-size: 9px; }
-    .bar-group { display: flex; flex-direction: column; align-items: center; width: 60px; }
-    .bar { width: 50px; background: linear-gradient(to top, #4285f4, #7baaf7); border: 1px solid #000; position: relative; margin-bottom: 5px; }
-    .bar-value { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 10px; font-weight: bold; }
-    .bar-label { font-size: 9px; font-weight: bold; text-align: center; margin-top: 5px; }
-    .co-table { width: 100%; border-collapse: collapse; font-size: 10px; }
-    .co-table th, .co-table td { border: 1px solid #000; padding: 5px; text-align: center; }
-    .co-table th { background: #f0f0f0; }
-    .co-bars { display: flex; align-items: flex-end; justify-content: space-around; height: 150px; border-left: 2px solid #000; border-bottom: 2px solid #000; padding: 10px; margin-top: 15px; }
-    .co-bar { width: 40px; background: linear-gradient(to top, #34a853, #7cc97f); border: 1px solid #000; position: relative; }
-    .footer-section { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; font-size: 11px; border-top: 1px solid #000; padding-top: 20px; }
-    .footer-item { text-align: center; }
-    @media print { body { background: white; padding: 0; } .question-paper { box-shadow: none; max-width: 100%; } }
-    .legend { display: flex; gap: 15px; justify-content: center; margin-top: 15px; font-size: 9px; }
-    .legend-item { display: flex; align-items: center; gap: 5px; }
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Question Paper – SOFTWARE ENGINEERING AND SYSTEM DESIGN</title>
-      <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-      <div class="paper">
-        <header class="paper-header">
-          <div class="title-block">
-            <h1>SR UNIVERSITY</h1>
-            <h2>SCHOOL OF CS&amp;AI	DEPARTMENT OF CSE</h2>
-          </div>
-          <div class="meta-grid">
-            <div><strong>Program Name:</strong> B. Tech</div>
-            <div><strong>Exam Type:</strong> Make UP Midterm</div>
-            <div><strong>Academic Year:</strong> 2025-26</div>
-            <div><strong>Course Coordinator Name</strong> Dr. C. Madan Kumar</div>
-            <div><strong>Course Code</strong> 23CS201PC302</div>
-            <div><strong>Course Title</strong> SOFTWARE ENGINEERING AND SYSTEM DESIGN</div>
-            <div><strong>Year/Sem</strong> III/I</div>
-            <div><strong>Regulation</strong> R23</div>
-            <div><strong>Date of Exam</strong> 01-11-2025</div>
-            <div><strong>Time</strong> 2 PM to 3 PM</div>
-            <div><strong>Duration</strong> 1 Hours</div>
-            <div><strong>Max. Marks</strong> 20</div>
-          </div>
-          <div class="note">ANSWER ALL QUESTIONS</div>
-        </header>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.5; background: #f5f7fb; padding: 20px; color: #111; }
+    .paper { max-width: 880px; margin: 0 auto; background: #fff; border: 1px solid #ddd; padding: 20px; }
+    .paper-header { border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 12px; }
+    .paper-header h1 { font-size: 18px; text-align: center; }
+    .paper-header h2 { font-size: 14px; text-align: center; margin-top: 4px; }
+    .meta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 12px; font-size: 12px; margin-top: 10px; }
+    .note { margin-top: 10px; font-weight: 700; font-size: 12px; text-align: center; background: #000; color: #fff; padding: 6px; }
+    .legend { display: grid; grid-template-columns: 1fr; gap: 6px; margin: 12px 0; font-size: 11px; }
+    .badge { display: inline-block; border: 1px solid #ccc; padding: 4px 8px; border-radius: 8px; margin-right: 8px; }
+    .table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 8px 0 14px; }
+    .table th, .table td { border: 1px solid #000; padding: 6px; text-align: center; }
+    .question { border-top: 1px solid #ddd; padding-top: 12px; margin-top: 12px; }
+    .q-header { display: flex; gap: 18px; font-size: 12px; margin: 6px 0; }
+    .diagram-block { margin: 8px 0; }
+    .chart-wrapper { border: 1px solid #ddd; padding: 12px; margin-top: 12px; }
+    .chart-title { font-size: 12px; font-weight: 700; text-align: center; margin-bottom: 8px; }
+    .bars { display: flex; align-items: flex-end; justify-content: space-between; height: 180px; border-left: 2px solid #000; border-bottom: 2px solid #000; padding: 8px; }
+    .bar { width: 15%; background: linear-gradient(180deg,#7db3ff,#3b82f6); border: 1px solid #000; position: relative; }
+    .bar .val { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font-size: 11px; font-weight: 700; }
+    .bar .lbl { position: absolute; bottom: -36px; left: 50%; transform: translateX(-50%); font-size: 10px; font-weight: 700; text-align: center; width: 100%; }
+    .footer { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: end; }
+    .footer .slot { text-align: center; }
+    .print-wrap { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+    .print-btn { padding: 6px 10px; }
+    @media print { body { background: #fff; padding: 0; } .paper { border: none; padding: 0; } .chart-wrapper { page-break-inside: avoid; } .print-btn { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="paper">
+    <header class="paper-header">
+      <h1>SR UNIVERSITY WARANGAL</h1>
+      <h2>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h2>
+      <div class="meta-grid">
+        <div><strong>Exam Type:</strong> MID TERM - 1</div>
+        <div><strong>Course:</strong> 25CS201PC302 - SOFTWARE ENGINEERING AND SYSTEM DESIGN</div>
+        <div><strong>Year/Sem/Regulation:</strong> III Year / I Semester / R23</div>
+        <div><strong>Date:</strong> 15-10-2025</div>
+        <div><strong>Time:</strong> 2 PM to 3 PM</div>
+        <div><strong>Duration:</strong> 1 Hour</div>
+        <div><strong>Max. Marks:</strong> 20</div>
+      </div>
+      <div class="legend">
+        <div>
+          <span class="badge"><strong>CO1</strong> Define SE principles & process models; translate requirements to specs</span>
+          <span class="badge"><strong>CO2</strong> Develop UML diagrams (use case, activity, class, sequence, collaboration)</span>
+          <span class="badge"><strong>CO3</strong> Apply testing strategies; compare QA; develop SQA plan</span>
+          <span class="badge"><strong>CO4</strong> Evaluate performance (scalability, availability, latency, throughput, maintainability)</span>
+        </div>
+      </div>
+      <div class="note">PART-A (ANSWER ALL QUESTIONS) - 10*2=20</div>
+    </header>
 
-        <main>
-          <div class="paper">
-            <header class="paper-header">
-              <div class="title-block">
-                <h1>SR UNIVERSITY</h1>
-                <h2>SCHOOL OF CS&amp;AI	DEPARTMENT OF CSE</h2>
-              </div>
-              <div class="meta-grid">
-                <div><strong>Program Name:</strong> B. Tech</div>
-                <div><strong>Exam Type:</strong> Make UP Midterm</div>
-                <div><strong>Academic Year:</strong> 2025-26</div>
-                <div><strong>Course Coordinator Name</strong> Dr. C. Madan Kumar</div>
-                <div><strong>Course Code</strong> 23CS201PC302</div>
-                <div><strong>Course Title</strong> SOFTWARE ENGINEERING AND SYSTEM DESIGN</div>
-                <div><strong>Year/Sem</strong> III/I</div>
-                <div><strong>Regulation</strong> R23</div>
-                <div><strong>Date of Exam</strong> 01-11-2025</div>
-                <div><strong>Time</strong> 2 PM to 3 PM</div>
-                <div><strong>Duration</strong> 1 Hours</div>
-                <div><strong>Max. Marks</strong> 20</div>
-              </div>
-              <div class="note">ANSWER ALL QUESTIONS</div>
-            </header>
+    <main>
+      <table class="table">
+        <thead>
+          <tr><th>Q NO</th><th>Question</th><th>MARKS</th><th>CO</th><th>BL</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="question-text">
+              You are working as a Software Engineer at TechNova Software, a startup developing an Online Course Management System (OCMS) for universities. The development team follows the Agile Scrum methodology, consisting of a Product Owner, Scrum Master, Development Team, and QA Team. During the third sprint, the team faced multiple challenges including unclear user-functional requirements, uncontrolled dependencies in the OO repository, and frequent conflicts during merges. They adopted practices like Sprint Planning, Daily Stand-ups, Sprint Reviews, and Retrospectives. As a senior member, you recommend a Source Code Configuration Management (SCCM) model for the project. Justify your selection with clear reasoning. How could the clear identification of features, and clear documentation help to prevent the issues observed? Additionally, design a Use Case diagram that illustrates the primary actors, includes Admin, Faculty, Student, and System Admin roles.
+            </td>
+            <td>10</td>
+            <td>1</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="question-text">
+              As a Software Engineer at GeniusAI Technologies, your team is developing a Campus Management Web Application for a university. The software will integrate numerous features: facility reservation, facility information, activity information, class scheduling, attendance records, and communication. Features will be accessed through both web and mobile interfaces for students, faculty, and administration. As part of the Software Design and Implementation phase, your responsibility is to ensure that the application is modular, scalable, reusable, and maintainable. Your task is to illustrate the system design by drawing a Class Diagram or Sequence Diagram to show key object interactions between modules, such as Student, Faculty, and Course. Finally, recommend two suitable design patterns, one Creational and one Structural, and explain how these design patterns can be effectively implemented in the project to improve its modularity, maintainability, and readability.
+            </td>
+            <td>10</td>
+            <td>2</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
 
-            <main>
-              <div class="legend">
-                <span class="badge"><strong>CO1</strong>: Q1</span>
-                <span class="badge"><strong>CO2</strong>: Q2</span>
-                <span class="badge">BT: K1–K4 range</span>
-              </div>
-              <table class="table">
-                <thead>
-                  <tr><th>Question</th><th>Subparts</th><th>Marks</th><th>CO</th><th>BT</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Q1</td><td>a, b, c, d</td><td>3 + 2 + 2 + 3 = 10</td><td>CO1</td><td>K2–K4</td></tr>
-                  <tr><td>Q2</td><td>a, b, c, d</td><td>2 + 3 + 3 + 2 = 10</td><td>CO2</td><td>K2–K4</td></tr>
-                </tbody>
-              </table>
+      <details class="diagram-block">
+        <summary>Use Case Diagram (Q1)</summary>
+        <svg viewBox="0 0 820 280" style="width:100%;height:auto;border:1px solid #ddd" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="560" cy="140" rx="210" ry="120" fill="#fff" stroke="#333" />
+          <text x="560" y="35" text-anchor="middle" font-size="12">OCMS System</text>
+          <circle cx="80" cy="60" r="20" fill="#ddd" stroke="#777" />
+          <text x="80" y="95" font-size="12" text-anchor="middle">Admin</text>
+          <circle cx="80" cy="130" r="20" fill="#ddd" stroke="#777" />
+          <text x="80" y="165" font-size="12" text-anchor="middle">Faculty</text>
+          <circle cx="80" cy="200" r="20" fill="#ddd" stroke="#777" />
+          <text x="80" y="235" font-size="12" text-anchor="middle">Student</text>
+          <circle cx="80" cy="260" r="20" fill="#ddd" stroke="#777" />
+          <text x="80" y="295" font-size="12" text-anchor="middle">SysAdmin</text>
+          <ellipse cx="520" cy="90" rx="110" ry="26" fill="#eef9ff" stroke="#99c" />
+          <text x="520" y="95" font-size="12" text-anchor="middle">Manage Courses</text>
+          <ellipse cx="520" cy="130" rx="120" ry="26" fill="#eef9ff" stroke="#99c" />
+          <text x="520" y="135" font-size="12" text-anchor="middle">Enroll/Assess</text>
+          <ellipse cx="520" cy="170" rx="150" ry="26" fill="#eef9ff" stroke="#99c" />
+          <text x="520" y="175" font-size="12" text-anchor="middle">Scrum Events</text>
+          <line x1="100" y1="60" x2="430" y2="90" stroke="#333" />
+          <line x1="100" y1="130" x2="430" y2="130" stroke="#333" />
+          <line x1="100" y1="200" x2="430" y2="170" stroke="#333" />
+        </svg>
+      </details>
 
-              <section class="question">
-                <div class="q-header">
-                  <div><strong>Q. No.</strong> 1</div>
-                  <div><strong>Marks:</strong> 10</div>
-                  <div><strong>CO:</strong> CO1</div>
-                </div>
-                <p>
-                  You are part of a development team at NextGen Systems building a Smart Library Management Application that allows users to search, borrow, and return books online. The system also sends due-date reminders and supports role-based access for Admins, Librarians, and Members. During the project, your team struggles with handling requirement changes and ensuring consistent progress tracking.
-                </p>
-                <ol>
-                  <li>a) Select the most suitable SDLC model for this project and justify your choice. [3]</li>
-                  <li>b) Draw its block diagram with key stages. [2]</li>
-                  <li>c) List and categorize the functional and non-functional requirements. [2]</li>
-                  <li>d) Create a Use Case diagram showing key interactions. [3]</li>
-                </ol>
+      <details class="diagram-block">
+        <summary>Class/Sequence Diagram (Q2)</summary>
+        <svg viewBox="0 0 820 320" style="width:100%;height:auto;border:1px solid #ddd" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="40" width="160" height="80" rx="6" fill="#f9f9f9" stroke="#999" />
+          <text x="120" y="75" text-anchor="middle" font-size="12">Student</text>
+          <rect x="240" y="40" width="160" height="80" rx="6" fill="#f9f9f9" stroke="#999" />
+          <text x="320" y="75" text-anchor="middle" font-size="12">Faculty</text>
+          <rect x="440" y="40" width="160" height="80" rx="6" fill="#f9f9f9" stroke="#999" />
+          <text x="520" y="75" text-anchor="middle" font-size="12">Course</text>
+          <line x1="120" y1="120" x2="320" y2="120" stroke="#333" />
+          <text x="220" y="115" font-size="11">register()</text>
+          <line x1="320" y1="120" x2="520" y2="120" stroke="#333" />
+          <text x="420" y="115" font-size="11">assign()</text>
+        </svg>
+      </details>
 
-                <details class="diagram-block">
-                  <summary>SDLC Block Diagram (example)</summary>
-                  <svg viewBox="0 0 820 230" class="svg-diagram" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                        <polygon points="0 0, 8 3, 0 6" fill="#333"></polygon>
-                      </marker>
-                    </defs>
-                    <rect x="10" y="40" width="120" height="60" rx="6" class="box" />
-                    <text x="70" y="75" class="label">Planning</text>
-                    <rect x="150" y="40" width="120" height="60" rx="6" class="box" />
-                    <text x="210" y="75" class="label">Analysis</text>
-                    <rect x="290" y="40" width="120" height="60" rx="6" class="box" />
-                    <text x="350" y="75" class="label">Design</text>
-                    <rect x="430" y="40" width="120" height="60" rx="6" class="box" />
-                    <text x="490" y="75" class="label">Implementation</text>
-                    <rect x="570" y="40" width="120" height="60" rx="6" class="box" />
-                    <text x="630" y="75" class="label">Testing</text>
-                    <rect x="710" y="40" width="100" height="60" rx="6" class="box" />
-                    <text x="760" y="75" class="label">Deploy</text>
-                    <path d="M130 70 L150 70" class="arrow" />
-                    <path d="M270 70 L290 70" class="arrow" />
-                    <path d="M410 70 L430 70" class="arrow" />
-                    <path d="M550 70 L570 70" class="arrow" />
-                    <path d="M690 70 L710 70" class="arrow" />
-                    <path d="M760 100 Q 760 160 410 160 Q 60 160 60 100" class="feedback" />
-                    <text x="410" y="185" class="small">Iterative feedback for changes &amp; tracking</text>
-                  </svg>
-                </details>
+      <div class="chart-wrapper">
+        <div class="chart-title">Question Paper Analysis - Bloom's Taxonomy &amp; Course Outcomes</div>
+        <div class="chart-title">Bloom's Level wise marks distribution</div>
+        <div class="bars">
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">Remembering</div></div>
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">Understanding</div></div>
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">Applying</div></div>
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">Analyzing</div></div>
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">Evaluating</div></div>
+          <div class="bar" style="height:95%"><div class="val">38</div><div class="lbl">Creating</div></div>
+        </div>
 
-                <details class="diagram-block">
-                  <summary>Use Case Diagram (example)</summary>
-                  <svg viewBox="0 0 820 280" class="svg-diagram" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="560" cy="140" rx="210" ry="120" class="system" />
-                    <text x="560" y="35" class="label">Smart Library System</text>
-                    <circle cx="80" cy="60" r="20" class="actor" />
-                    <text x="80" y="95" class="small">Member</text>
-                    <circle cx="80" cy="150" r="20" class="actor" />
-                    <text x="80" y="185" class="small">Librarian</text>
-                    <circle cx="80" cy="240" r="20" class="actor" />
-                    <text x="80" y="275" class="small">Admin</text>
-                    <ellipse cx="520" cy="90" rx="95" ry="26" class="usecase" />
-                    <text x="520" y="95" class="small">Search Books</text>
-                    <ellipse cx="520" cy="130" rx="120" ry="26" class="usecase" />
-                    <text x="520" y="135" class="small">Borrow / Return</text>
-                    <ellipse cx="520" cy="170" rx="160" ry="26" class="usecase" />
-                    <text x="520" y="175" class="small">Due-date Reminders</text>
-                    <ellipse cx="520" cy="210" rx="160" ry="26" class="usecase" />
-                    <text x="520" y="215" class="small">Role-based Access</text>
-                    <line x1="100" y1="60" x2="430" y2="90" class="link" />
-                    <line x1="100" y1="150" x2="430" y2="130" class="link" />
-                    <line x1="100" y1="240" x2="430" y2="210" class="link" />
-                  </svg>
-                </details>
-              </section>
+        <table class="table" style="margin-top:12px">
+          <thead>
+            <tr>
+              <th>CO Number</th><th>Remembering (1)</th><th>Understanding (2)</th><th>Applying (3)</th><th>Analyzing (4)</th><th>Evaluating (5)</th><th>Creating (6)</th><th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>CO1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10</td><td>10</td></tr>
+            <tr><td>CO2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10</td><td>10</td></tr>
+            <tr><td>CO3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>CO4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+          </tbody>
+        </table>
 
-              <section class="question">
-                <div class="q-header">
-                  <div><strong>Q. No.</strong> 2</div>
-                  <div><strong>Marks:</strong> 10</div>
-                  <div><strong>CO:</strong> CO2</div>
-                </div>
-                <p>
-                  You are designing a Food Delivery Application for a startup, offering real-time order tracking, secure payments, and delivery partner management. The app must handle heavy traffic and support both web and mobile users.
-                </p>
-                <ol>
-                  <li>a) Explain how you would apply software design principles like modularity, cohesion, and information hiding to make the system scalable. [2]</li>
-                  <li>b) Choose a suitable architectural style and justify your choice with a simple labeled architecture diagram. [3]</li>
-                  <li>c) Illustrate system interactions with a Class or Sequence. [3]</li>
-                  <li>d) Recommend one Creational and one Behavioral design pattern that improves maintainability and flexibility. [2]</li>
-                </ol>
+        <div class="bars" style="height:140px;margin-top:8px">
+          <div class="bar" style="height:60%"><div class="val">10</div><div class="lbl">CO1</div></div>
+          <div class="bar" style="height:60%"><div class="val">10</div><div class="lbl">CO2</div></div>
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">CO3</div></div>
+          <div class="bar" style="height:0%"><div class="val">0</div><div class="lbl">CO4</div></div>
+        </div>
+      </div>
 
-                <details class="diagram-block">
-                  <summary>Architecture Diagram (example)</summary>
-                  <svg viewBox="0 0 820 320" class="svg-diagram" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="200" height="60" rx="6" class="box" />
-                    <text x="120" y="55" class="label">Web &amp; Mobile Clients</text>
-                    <rect x="260" y="20" width="200" height="60" rx="6" class="box" />
-                    <text x="360" y="55" class="label">API Gateway</text>
-                    <rect x="500" y="20" width="300" height="60" rx="6" class="box" />
-                    <text x="650" y="55" class="label">Microservices (Orders, Payments, Tracking)</text>
-                    <rect x="120" y="120" width="220" height="60" rx="6" class="box" />
-                    <text x="230" y="155" class="label">Event Bus (Kafka)</text>
-                    <rect x="380" y="120" width="180" height="60" rx="6" class="box" />
-                    <text x="470" y="155" class="label">Cache (Redis)</text>
-                    <rect x="580" y="120" width="220" height="60" rx="6" class="box" />
-                    <text x="690" y="155" class="label">Database</text>
-                    <text x="410" y="220" class="small">Scalable, modular services with isolation</text>
-                  </svg>
-                </details>
-
-                <details class="diagram-block">
-                  <summary>Sequence Diagram (example)</summary>
-                  <svg viewBox="0 0 820 340" class="svg-diagram" xmlns="http://www.w3.org/2000/svg">
-                    <text x="80" y="20" class="small">Client</text>
-                    <text x="260" y="20" class="small">API</text>
-                    <text x="440" y="20" class="small">OrderSvc</text>
-                    <text x="620" y="20" class="small">DB</text>
-                    <line x1="80" y1="30" x2="80" y2="320" class="lifeline" />
-                    <line x1="260" y1="30" x2="260" y2="320" class="lifeline" />
-                    <line x1="440" y1="30" x2="440" y2="320" class="lifeline" />
-                    <line x1="620" y1="30" x2="620" y2="320" class="lifeline" />
-                    <path d="M80 60 L260 60" class="msg" />
-                    <text x="170" y="55" class="small">PlaceOrder()</text>
-                    <path d="M260 90 L440 90" class="msg" />
-                    <text x="350" y="85" class="small">validate &amp; route</text>
-                    <path d="M440 120 L620 120" class="msg" />
-                    <text x="520" y="115" class="small">persist</text>
-                    <path d="M620 150 L440 150" class="msg" />
-                    <text x="530" y="145" class="small">ok</text>
-                    <path d="M440 180 L260 180" class="msg" />
-                    <text x="360" y="175" class="small">created</text>
-                    <path d="M260 210 L80 210" class="msg" />
-                    <text x="170" y="205" class="small">orderId</text>
-                  </svg>
-                </details>
-              </section>
-            </main>
-        .paper-header .title-block { text-align: center; }
-        .paper-header h1 { margin: 0; font-size: 22px; letter-spacing: 1px; }
-        .paper-header h2 { margin: 4px 0 12px; font-size: 16px; font-weight: 600; }
-        .meta-grid { display: grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 8px 16px; font-size: 14px; }
-        .note { margin-top: 8px; padding: 8px; border: 1px dashed var(--border); text-align: center; font-weight: 600; }
-        .question { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--border); }
-        .q-header { display: flex; gap: 24px; font-size: 14px; margin-bottom: 8px; }
-        .diagram-block { margin: 10px 0; }
-        summary { cursor: pointer; color: var(--accent); }
-        .svg-diagram { width: 100%; height: auto; border: 1px solid var(--border); }
-        .box { fill: #f9f9f9; stroke: #999; }
-        .usecase { fill: #eef9ff; stroke: #99c; }
-        .system { fill: #fff; stroke: #ccc; }
-        .actor { fill: #ddd; stroke: #777; }
-        .arrow, .link, .msg { stroke: #333; stroke-width: 2; fill: none; }
-        .feedback { stroke: #bbb; stroke-width: 2; fill: none; stroke-dasharray: 6 4; }
-        .lifeline { stroke: #aaa; stroke-dasharray: 4 4; }
-        .label { font-size: 12px; text-anchor: middle; dominant-baseline: middle; }
-        .small { font-size: 12px; text-anchor: middle; }
-        .paper-footer { margin-top: 18px; display: flex; align-items: center; justify-content: space-between; }
-        .signatures { display: flex; gap: 32px; }
-        .signatures .label { font-size: 12px; color: var(--muted); }
-        .signatures .line { width: 220px; height: 1px; background: #000; margin-top: 24px; }
-        .print-btn { padding: 6px 12px; }
-        @media print {
-          .print-btn { display: none; }
-          .paper { border: none; margin: 0; padding: 0; }
-          .svg-diagram { border: none; }
-        }
-      </style>
-    </body>
-    </html>
+      <div class="footer">
+        <div class="slot">
+          <div>Course Coordinator</div>
+          <div style="height:1px;background:#000;margin-top:24px"></div>
+        </div>
+        <div class="slot">
+          <div>HOD CSE</div>
+          <div style="height:1px;background:#000;margin-top:24px"></div>
+        </div>
+      </div>
+      <div class="print-wrap">
+        <div>*** END OF QUESTION PAPER ***<br/>Prepared by: Dr. K. Kalaivani | Department of CSE | © 2025</div>
+        <button class="print-btn" onclick="window.print()">🖨️ Print Question Paper</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
